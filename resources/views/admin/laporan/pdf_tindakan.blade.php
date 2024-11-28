@@ -27,7 +27,7 @@
     </table>
     <hr>
     <h3 style="text-align: center">LAPORAN DATA TINDAKAN PELANGGARAN PERATURAN DAERAH </h3> 
-    <center>PERIODE : {{$bulan}} - {{$tahun}}</center>
+    <center>PERIODE : {{\Carbon\Carbon::createFromFormat('m', $bulan)->translatedFormat('F')}} {{$tahun}}</center>
     <br/>
     <table width="100%" border="1" cellpadding="5" cellspacing="0">
         <tr>
